@@ -1,0 +1,164 @@
+/* style of all body*/
+body {
+	background-color: #C1C1C1;
+}
+/* style of page header block */
+.page_header {
+	height: 50px;
+	border: 1px solid black;
+}
+/* style of company logo block*/
+.logo {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	width: 14.9%;
+	height: 100%;
+	border-right: 1px solid black;
+	justify-content: center;
+	padding-left: 1px;
+}
+/* style of company name block */
+.company_name {
+	display: inline-block;
+	margin: 0;
+	height: 100%;
+	text-align: center;
+	width: 49%;
+}
+/* style of banner block */
+.banner {
+	display: inline-block;
+	float: right;
+	margin: 0;
+	width: 35%;
+	height: 100%;
+	border-left: 1px solid black;
+	text-align: center;
+}
+/* style of main block */
+.main {
+	border: 1px solid black;
+	height: 850px;
+}
+/* style of left sidebar */
+.left_sidebar {
+	display: inline-block;
+	float: left;
+	width: 15%;
+	height: 100%;
+	border-right: 1px solid black;
+}
+/* style of navigation bar menu */
+.navbar {
+	list-style: none;
+	text-align: center;
+	font-size: 25px;
+	padding-left: 0;
+
+}
+/* style of elements of navigation bar menu */
+.navbar li {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+/* style of links after hover in navigation bar menu */
+.navbar li:hover {
+	background-color: #F5F5F5;
+	border-radius: 5px;
+}
+/* style of links in navigation bar menu */
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+/* style of company info block */
+.company_info {
+	width: 84%;
+	float: right;
+	display: inline-block;
+}
+/* style of upper block in company info block */
+.up_side_info {
+	border-bottom: 1px solid black;
+}
+/* style of main info block */
+.main_info {
+	display: inline-block;
+	float: left;
+	width: 58.1%;
+	height: 420px;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+/* style of product block */
+.product {
+	display: inline-block;
+	width: 58.1%;
+	text-align: center;
+}
+/* style of workers block */
+.workers {
+	display: inline-block;
+	width: 41.5%;
+	float: right;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 420px;
+	padding-left: 1px;
+	text-align: center;
+}
+/* style of address block */
+.address {
+	margin-top: 0;
+	float: right;
+	display: inline-block;
+	width: 41.5%;
+	border-left: 1px solid black;
+	height: 425px;
+	text-align: center;
+}
+/* style of footer */
+.footer {
+	border: 1px solid black;
+	height: 50px;
+}
+/* style of counter (doesn't work) */
+.counter {
+	display: inline-block;
+	width: 15.1%;
+	float: left;
+	border-right: 1px solid black;
+}
+/* style of clock */
+.clock {
+	display: inline-block;
+	width: 49%;
+}
+
+.hour,  .min, .sec {
+      color: black;
+}
+/* style of about block */
+.about {
+	display: inline-block;
+	float: right;
+	text-align: center;
+	border-left: 1px solid black;
+	width: 35%;
+	height: 100%;
+}
+/* style of headers in blocks */
+h3 {
+	text-align: center;
+}
+/* style of tables */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+td, th {
+    padding: 3px;
+    border: 1px solid black; 
+}

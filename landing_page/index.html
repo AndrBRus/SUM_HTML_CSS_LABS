@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head info -->
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8">
+		<!-- link to stylesheet file -->
+		<link rel="stylesheet" href="styles/index_stylesheet.css">
+		<!-- info on the browser tab -->
+		<title>Wangan Nights</title>
+	</head>
+	<body>
+		<!-- page header block -->
+		<div class="page_header">
+			<!-- logo block -->
+			<div class="logo">
+				<img class="logo_image" src="statics/logo.jpg" alt="logo" heigh="50" width="150">
+			</div>
+			<!--  company name block -->
+			<div class="company_name">
+				<h3>Wangan Nights with you!</strong></h3>
+			</div>
+			<!-- banner block -->
+			<div class="banner">
+				<p><strong>This week alone, there is a thirty percent discount on two cars!</strong></p>
+			</div>
+		</div>
+		<!-- main block -->
+		<div class="main">
+			<!-- sidebar block -->
+			<div class="left_sidebar">
+				<!-- navigation menu block -->
+				<ul class="navbar">
+					<li><a href="404.html">All cars</a></li>
+					<li><a href="404.html">Reviews</a></li>
+					<li><a href="404.html">Partneres</a></li>
+			</div>
+			<!-- company info block -->
+			<div class="company_info">
+				<!-- upper blocks of company info block -->
+				<div class="up_side_info">
+					<!-- main info block of upper block -->
+					<div class="main_info">
+						<h3>Main info</h3>
+						<p>
+							Good afternoon, dear visitor. At the moment you are on the site of the company "Wangan Nights".
+						</p>
+						<p>
+							Our company is engaged in the import of cars from abroad, namely from Japan. You can see the entire range in the "Products" tab. You can find completely different cars from the eighties and nineties. Everyone will find exactly the same car for themselves.
+						</p>
+						<p>
+							Dedicated to lovers of those times.
+						</p>
+					</div>
+					<!-- workers block of upper block -->
+					<div class="workers">
+						<h3>Info about workesr</h3>
+						<table>
+							<caption><strong>You can contact</strong></caption>
+							<tr>
+								<th>Name</th>
+								<th>Position</th>
+								<th>Phone</th>
+							</tr>
+							<tr>
+								<td>Alex Mark</td>
+								<td>Company director</td>
+								<td>XXXX</td>
+							</tr>
+							<tr>
+								<td>Vlad Chaika</td>
+								<td>Representative of the company</td>
+								<td>XXXX</td>
+							</tr>
+							<tr>
+								<td>Alexandr Dumenko</td>
+								<td>deputy company representative</td>
+								<td>XXXX</td>
+							</tr>
+							<tr>
+								<td>Vitaliy Smirnov</td>
+								<td>Sales Manager</td>
+								<td>XXXX</td>
+							</tr>
+						</table>
+						<p>You can call the hotline: <strong>XXX-XXX-XXX-XXX</strong></p>
+					</div>
+				</div>
+				<!-- lower blocks of  down side block -->
+				<div class="down_side_info">
+					<!-- product block of down side block -->
+					<div class="product">
+						<h3>Product examples</h3>
+						<table>
+							<caption><strong>You can buy</strong></caption>
+							<tr>
+								<th>Name</th>
+								<th>Mileage (km)</th>
+								<th>Price (dollars)</th>
+							</tr>
+							<tr>
+								<th>Nissan 240SX</th>
+								<th>45000</th>
+								<th>2500</th>
+							</tr>
+							<tr>
+								<th>Honda NSX</th>
+								<th>13252</th>
+								<th>10000</th>
+							</tr>
+							<tr>
+								<th>Mazda MX-5 Miata</th>
+								<th>73043</th>
+								<th>1500</th>
+							</tr>
+							<tr>
+								<th>Subaru Forester</th>
+								<th>34235</th>
+								<th>5050</th>
+							</tr>
+							<tr>
+								<th>Toyota Supra</th>
+								<th>3500</th>
+								<th>8900</th>
+							</tr>
+						</table>
+					</div>
+					<!-- address block of down side block -->
+					<div class="address">
+						<h3>Our address</h3>
+						<p>
+							You can find us at: Vladivostok, Korabelnaya Naberezhnaya street, X.
+						</p>
+						<p>
+							Waiting for you, best regards team "Wangan Nights"!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer block -->
+		<div class="footer">
+			<!-- counter block (doesn't work, need to upload to the server) of footer block -->
+			<div class="counter">
+				<p>counter doesn't work</p>
+			</div>
+			<!-- about block of footer block -->
+			<div class="about">
+				<p>© AndrBRus, oldschool style</p>
+			</div>
+			<!-- clock block of footer block -->
+			<!-- link for clock:https://learn.javascript.ru/task/clock-setinterval -->
+			<div id="clock">
+			    <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+			  </div>
+			  <!-- javascript script for clock block -->
+			  <script>
+			    let timerId;
+
+			    function update() {
+			      let clock = document.getElementById('clock');
+			      let date = new Date();
+
+			      let hours = date.getHours();
+			      if (hours < 10) hours = '0' + hours;
+			      clock.children[0].innerHTML = hours;
+
+			      let minutes = date.getMinutes();
+			      if (minutes < 10) minutes = '0' + minutes;
+			      clock.children[1].innerHTML = minutes;
+
+			      let seconds = date.getSeconds();
+			      if (seconds < 10) seconds = '0' + seconds;
+			      clock.children[2].innerHTML = seconds;
+			    }
+
+			    function clockStart() {
+			      timerId = setInterval(update, 1000);
+			      update();
+			    }
+
+			    function clockStop() {
+			      clearInterval(timerId);
+			    }
+
+			    clockStart();
+			  </script>
+		</div>
+	</body>
+</html>
